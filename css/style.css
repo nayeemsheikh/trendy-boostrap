@@ -45,6 +45,7 @@ a{
 }
 .header_part .social_icon a{
     padding-right: 20px;
+    color: #000000;
 }
 
 .header_part .social_icon .btn{
@@ -76,9 +77,6 @@ nav .menu ul li a{
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* nav .menu ul li a{
-    text-align: right;
-} */
 nav .menu ul li:nth-child(3){
     position: relative;
 }
@@ -120,4 +118,34 @@ nav .menu ul li .dropdown2 li a{
 }
 nav .menu ul li:nth-child(6){
     position: relative;
+}
+
+nav .menu ul li:nth-child(6) .dropdown li .dropdown{
+    left: 100%;
+    top: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav .menu ul li:nth-child(6) .dropdown li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    top:0;
+}
+
+nav .menu ul li:nth-child(6) .dropdown .dropdown2 {
+    position: absolute;
+    left: 100%;
+    background-color: #ffffff;
+    padding-left: 0;
+    bottom: -45px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+}
+
+nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
 }
