@@ -63,6 +63,7 @@ a{
 nav .menu{
     background-image: linear-gradient(150deg,#0575E6 0%,#0CE89D 100%);
     padding: 15px 0;
+    margin-bottom: 50px;
 }
 
 nav .menu ul{
@@ -148,4 +149,60 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     opacity: 1;
     visibility: visible;
     bottom: 0;
+}
+
+/* =======================
+          news_part
+========================== */
+.news .travel{
+    width: 100%;
+    background: url(../images/main_post.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 610px;
+    background-size: cover;
+}
+.news>.travel>img{
+    width: 100%;
+    min-height: 610px;}
+
+.news .travel{
+    position: relative;
+}
+
+.news .travel .gradien_color{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom,transparent 55%,rgba(0,0,0,.95) 100%);
+    width: 100%;
+    height: 100%;
+} 
+.news .travel .news_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent 55%,rgb(0 0 0 / 24%) 100%);
+    padding: 0 31px;
+}
+.news .travel .news_bottom>a{
+
+        display: inline-block;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0 10px;
+        line-height: 21px;
+        letter-spacing: .55px;
+        background-color: #ff6e0d;
+        border-radius: 5px;
+}
+.news .travel .news_bottom h3{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 44px;
 }
