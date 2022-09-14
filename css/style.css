@@ -12,6 +12,9 @@ a{
     text-decoration: none;
 }
 
+ul{
+    padding-left: 0;
+}
 
 
 /* ============================== 
@@ -154,6 +157,9 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 /* =======================
           news_part
 ========================== */
+.news{
+    margin-bottom: 50px;
+}
 .news .travel{
     width: 100%;
     background: url(../images/main_post.jpg) ;
@@ -168,6 +174,7 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 
 .news .travel{
     position: relative;
+    transition: .4s;
 }
 
 .news .travel .gradien_color{
@@ -183,7 +190,6 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background: linear-gradient(to bottom,transparent 55%,rgb(0 0 0 / 24%) 100%);
     padding: 0 31px;
 }
@@ -202,7 +208,143 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 }
 .news .travel .news_bottom h3{
     color: #fff;
-    font-size: 36px;
+    font-size: 31px;
     font-weight: 800;
     line-height: 44px;
+}
+.news .travel .news_bottom .post_metainfo li{
+    display: inline-block;
+}
+
+.news .travel .news_bottom .post_metainfo li img{
+    width: 25px;
+    height: 25px;
+}
+.news .travel .news_bottom .post_metainfo li span{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.news .travel .news_bottom .post_metainfo li:nth-child(2){
+    margin-left: 40px;
+}
+.news .travel .news_bottom .post_metainfo li:nth-child(2) a{
+    color: #ffffff;
+    font-size: 15px;
+}
+.news .travel .news_bottom .post_metainfo li:nth-child(3){
+    margin-left: 40px;
+}
+.news .travel .news_bottom .post_metainfo li:nth-child(3) a{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.news .travel:hover{
+    box-shadow: rgb(0 0 0 / 21%) -20px 11px 0px 292px inset;
+}
+.news .sports{
+    position: relative;
+    margin-bottom: 20px;
+}
+.news .sports img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.news .sports .overlay{
+    position: absolute;
+    background-color:#f85060e6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.news .sports .overlay>a{
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 21px;
+    letter-spacing: .55px;
+    background-color: #4ab106;
+    border-radius: 5px;
+}
+.news .sports .overlay h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0%);
+    margin-top: 5px;
+}
+.news .sports .overlay .sports_content{
+    margin-bottom: 0;
+}
+.news .sports .overlay .sports_content li{
+    display: inline-block;
+}
+.sports .overlay .sports_content li a, .Technology .content ul li{
+    font-size: 12px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.sports .overlay p{
+    font-size: 13px;
+    color: rgba(255,255,255,.8);
+    margin-top: 0;
+} 
+
+.news .Technology img{
+    width: 100%;
+    object-fit: cover;
+    min-height: 420px;
+}
+
+
+.news .Technology{
+    position: relative;
+}
+.news .Technology .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom,transparent 55%,rgba(0,0,0,.95) 100%);
+}
+
+.news .Technology .content>a{
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 21px;
+    letter-spacing: .55px;
+    background-color: #007BFF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news .Technology .content h4{
+    font-size: 22px;
+    color: #fff;
+}
+
+
+.news .Technology .content ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.news .Technology .content ul li a{
+    color: #ffffff;
 }
