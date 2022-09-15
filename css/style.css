@@ -243,16 +243,16 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .news .travel:hover{
     box-shadow: rgb(0 0 0 / 21%) -20px 11px 0px 292px inset;
 }
-.news .sports{
+.news .sports, .health{
     position: relative;
     margin-bottom: 20px;
 }
-.news .sports img{
+.news .sports img, .health img{
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
-.news .sports .overlay{
+.news .sports .overlay , .health .overlay{
     position: absolute;
     background-color:#f85060e6;
     top: 0;
@@ -262,8 +262,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     padding: 10px;
     border-radius: 5px;
 }
+.news .health .overlay{
+    background: #0ab6a1e3;
+}
 
-.news .sports .overlay>a{
+.news .sports .overlay>a , .health .overlay>a{
     display: inline-block;
     color: #fff;
     font-size: 11px;
@@ -275,52 +278,61 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     background-color: #4ab106;
     border-radius: 5px;
 }
-.news .sports .overlay h4{
+.news .sports .overlay h4, .health .overlay h4{
     font-size: 20px;
     color: #fff;
     font-weight: 700;
     box-shadow: 0 0 10px rgb(0 0 0 / 0%);
     margin-top: 5px;
 }
-.news .sports .overlay .sports_content{
+.news .sports .overlay .sports_content , .health .overlay .sports_content{
     margin-bottom: 0;
 }
-.news .sports .overlay .sports_content li{
+.news .sports .overlay .sports_content li , .health .overlay .sports_content li {
     display: inline-block;
 }
-.sports .overlay .sports_content li a, .Technology .content ul li{
+.sports .overlay .sports_content li a, .Technology .content ul li, .health .overlay .sports_content li a {
     font-size: 12px;
     color: #fff;
     margin-right: 10px;
 }
 
-.sports .overlay p{
+.sports .overlay p, .health .overlay p{
     font-size: 13px;
     color: rgba(255,255,255,.8);
     margin-top: 0;
 } 
 
-.news .Technology img{
+.news .Technology img , .food img{
     width: 100%;
     object-fit: cover;
     min-height: 420px;
 }
 
 
-.news .Technology{
+.news .Technology , .food{
     position: relative;
 }
-.news .Technology .content{
+
+.news .Technology .gradient_color , .food .gradient_color{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20px;
     background: linear-gradient(to bottom,transparent 55%,rgba(0,0,0,.95) 100%);
+
+}
+.news .Technology .content , .food .content{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    padding: 20px;
 }
 
-.news .Technology .content>a{
+.news .Technology .content>a , .food .content>a{
     display: inline-block;
     color: #fff;
     font-size: 11px;
@@ -333,18 +345,70 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.news .food .content>a{
+    background-color: #FFAF31;
+}
 
-.news .Technology .content h4{
+.news .Technology .content h4, .food .content h4{
     font-size: 22px;
     color: #fff;
 }
 
 
-.news .Technology .content ul li{
+.news .Technology .content ul li, .food .content ul li{
     display: inline-block;
     margin-right: 20px;
 }
 
-.news .Technology .content ul li a{
+.news .Technology .content ul li a, .food .content ul li a{
     color: #ffffff;
 }
+
+.news .food{
+    margin-bottom: 20px;
+}
+
+/* =================
+    trending_part
+=================*/
+.trending_part{
+    padding: 10px;
+}
+.trending_part .health{
+    position: relative;
+}
+
+.trending_part .health img{
+    width: 100%;    
+    min-height: 316px;
+    object-fit: cover;
+}
+
+.trending_part .health .sports_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.trending_part .health .sports_content>a{
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 21px;
+    letter-spacing: .55px;
+    background-color: #84BE38;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.trending_part .health .sports_content h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0%);
+}
+.trending_part .health .sports_content li 
