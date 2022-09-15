@@ -65,12 +65,13 @@ ul{
 
 nav .menu{
     background-image: linear-gradient(150deg,#0575E6 0%,#0CE89D 100%);
-    padding: 15px 0;
+    padding: 15px 40px;
     margin-bottom: 50px;
 }
 
 nav .menu ul{
     margin-bottom: 0;
+    z-index: 9999;
 }
 nav .menu ul li{
     display: inline-block;
@@ -212,7 +213,7 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     font-weight: 800;
     line-height: 44px;
 }
-.news .travel .news_bottom .post_metainfo li{
+.news .travel .news_bottom .post_metainfo li, .trending_part .health .sports_content li {
     display: inline-block;
 }
 
@@ -228,7 +229,7 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .news .travel .news_bottom .post_metainfo li:nth-child(2){
     margin-left: 40px;
 }
-.news .travel .news_bottom .post_metainfo li:nth-child(2) a{
+.news .travel .news_bottom .post_metainfo li:nth-child(2) a,.trending_part .health .sports_content li a{
     color: #ffffff;
     font-size: 15px;
 }
@@ -371,8 +372,27 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 /* =================
     trending_part
 =================*/
-.trending_part{
-    padding: 10px;
+.trending_part {
+    padding-bottom: 50px;
+    background-color: #F7F7F7;
+    padding-top: 10px;
+}
+.trending_part h2{
+    position: relative;
+    padding: 40px 0 ;
+    color: #101010;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.trending_part h2 span {
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    background-color: red;
+    top: 50%;
+    left: -28px;
+    transform: translate(-50%, -50%);
 }
 .trending_part .health{
     position: relative;
@@ -386,10 +406,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 
 .trending_part .health .sports_content{
     position: absolute;
-    bottom: 0;
+    top: 43%;
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 35px 15px;
 }
 .trending_part .health .sports_content>a{
     display: inline-block;
@@ -411,4 +432,9 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     font-weight: 700;
     box-shadow: 0 0 10px rgb(0 0 0 / 0%);
 }
-.trending_part .health .sports_content li 
+.trending_part .health .sports_content li a{
+    margin-right: 20px;
+}
+.trending_part h3{
+
+}
