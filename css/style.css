@@ -436,6 +436,75 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .trending_part .health .sports_content li a{
     margin-right: 20px;
 }
-.trending_part h3{
 
+
+/* =========================
+         ad_section
+===========================*/
+.ad_part{
+    padding: 50px;
+    text-align:center;
 }
+
+
+/* =========================
+         popular_part
+=========================== */
+
+.popular_part .popular_menu_lefttext{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    margin-left: 30px;
+}
+.popular_part .popular_menu_lefttext::after, .popular_part .popular_item ul li:nth-child(5)::after{
+    content: '';
+    position: absolute;
+    background-color: #d72924;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-left: -30px;
+}
+.popular_part .popular_item ul{
+    text-align: right;
+}
+
+.popular_part .popular_item ul li{
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.popular_part .popular_item ul li a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #101010;
+    text-transform: capitalize;
+}
+.popular_part .popular_item ul li:nth-child(5){
+    position: relative;
+}
+.popular_part .popular_item ul li:nth-child(5)::after{
+    top: 0;
+    left: 100%;
+}
+
+.popular_part .follow_text{
+    color: #101010;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Heebo";
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
