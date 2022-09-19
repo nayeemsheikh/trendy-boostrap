@@ -526,11 +526,9 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     text-transform: capitalize;
 }
 
-
-
-
 .popular_content .sports{
     position: relative;
+    padding: 20px 0;
 }
 .popular_content .sports .overlay{
     position: absolute;
@@ -594,8 +592,98 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .popular_content .sports .sports_content i span{
     margin-left: 5px;
 }
+.sub_news .sub_news_content .left img {
+    width: 132px;
+    min-height: 89px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.sub_news .sub_news_content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+}
 
+.sub_news .sub_news_content .right_content{
+    margin-top: 5px;
+}
+.sub_news .sub_news_content .right_content p{
+    font-family: "Heebo";
+    font-size: 17px;
+    color: #101010;
+    font-weight: 500;
+    line-height: 21px;
+    transition: .4s;
+}
+.sub_news .sub_news_content .right_content:hover p{
+    color: #d72924;
+}
+.sub_news .sub_news_content .right_content i{
+    font-size: 11px;
+    color: #8a8a8a;
+    margin-right: 15px;
+}
+.sub_news .sub_news_content:nth-child(4){
+    border-bottom: 0;
+}
 
+.social_media{
+    padding: 40px 0;
+    text-align: center;
+}
+.social_icon{
+    cursor: pointer;
+    display:  inline-block;
+}
+.social_icon .icon{
+    width: 45px;
+    height: 45px;
+    background-color: #3b5999;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+}
+.social_icon .icon a{
+    color: #fff;
+}
 
+.social_icon .count {
+    font-family: 'MyriadPro-Regular';
+    color: #222;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.social_icon .fans {
+    font-family: 'MyriadPro-Regular';
+    color: #a9a9a9;
+    font-size: 12px;
+    display: block;
+    text-transform: capitalize;
 
+}
 
+.social_media .social_icon .facebook{
+    background-color: #3b5999;;
+}
+.social_media .social_icon .youtube{
+    background-color: #f33220;;
+}
+.social_media .social_icon .twitter{
+    background-color: #55acee;;
+}
+.social_media .social_icon .soundcloud{
+    background-color: #f50;;
+}
+.social_media .social_icon .instagram{
+    background-color: #517fa3;
+}
+.social_media .social_icon .dribbble{
+    background-color: #ea4c89;
+}
