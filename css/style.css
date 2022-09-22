@@ -748,7 +748,9 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     color:#d72924 ;
 }
 
-.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content{
+.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content,
+.most_popular_part .most_popular_sidebar_content
+{
     padding-left: 20px;
 }
 
@@ -757,7 +759,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .food,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .health,
-.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion{
+.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion,
+.most_popular_part .most_popular_sidebar_content .fashion, 
+.most_popular_part .most_popular_sidebar_content .food,
+.most_popular_part .most_popular_sidebar_content .health
+{
     padding-top: 20px;
     display: grid;
     grid-template-columns: auto auto;
@@ -770,7 +776,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .img img,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .food .img img,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .health .img img,
-.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .img img{
+.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .img img,
+.most_popular_part .most_popular_sidebar_content .fashion .img img,
+.most_popular_part .most_popular_sidebar_content .food .img img,
+.most_popular_part .most_popular_sidebar_content .health .img img
+{
     width: 88px;
     height: 92px;
     object-fit: cover;
@@ -781,7 +791,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .text h4,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .food .text h4,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .health .text h4,
-.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .text h4{
+.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .text h4,
+.most_popular_part .most_popular_sidebar_content .fashion .text h4 ,
+.most_popular_part .most_popular_sidebar_content .food .text h4,
+.most_popular_part .most_popular_sidebar_content .health .text h4
+{
     color: #ffaf31;
     text-transform: uppercase;
     font-family: "Heebo", sans-serif;
@@ -793,7 +807,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .fashion .text p,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .food .text p,
 .popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .health .text p,
-.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .food .text p{
+.popular_part .popular_menu .popular_content .side_bar .side_bar_main_content .food .text p,
+.most_popular_part .most_popular_sidebar_content .fashion .text p ,
+.most_popular_part .most_popular_sidebar_content .food .text p, 
+.most_popular_part .most_popular_sidebar_content .health .text p
+{
     font-family: "Heebo", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -884,16 +902,16 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     color: #ff0000;
 }
 
-.most_popular_part .fashion{
+.most_popular_part .most_populat_fashion{
     margin-top: 62px;
     position: relative;
 }
-.most_popular_part .fashion img{
+.most_popular_part .most_populat_fashion img{
     width: 100%;
     min-height: 408px;
 }
 
-.most_popular_part .fashion .overlay2{
+.most_popular_part .most_populat_fashion .overlay2{
     position: absolute;
     background: linear-gradient(to bottom, transparent 55%, rgba(0,0,0, .95) 100%);
     top:0;
@@ -902,7 +920,7 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     height: 100%;
 }
 
-.most_popular_part .fashion .overlay2 .sports_content{
+.most_popular_part .most_populat_fashion .overlay2 .sports_content{
     position: relative;
     top: 65%;
     left: 0;
@@ -912,7 +930,7 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
 }
 
 
-.most_popular_part .fashion .overlay2 .sports_content a{
+.most_popular_part .most_populat_fashion .overlay2 .sports_content a{
     padding: 5px 10px;
     background-color: #ff550a;
     border-radius: 5px;
@@ -923,14 +941,14 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     font-weight: 500;
     font-size: 11px;
 }
-.most_popular_part .fashion .overlay2 .sports_content h3{
+.most_popular_part .most_populat_fashion .overlay2 .sports_content h3{
     font-size: 26px;
     color: #ffffff;
     font-family: "Heebo";
     font-weight: 800;
     padding-top: 10px;
 }
-.most_popular_part .fashion .overlay2 .sports_content i{
+.most_popular_part .most_populat_fashion .overlay2 .sports_content i{
     font-size: 12px;
     display: inline-block;
     padding-right: 15px;
@@ -939,13 +957,13 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     
 }
 
-.most_popular_part .fashion .overlay2 .sports_content i span{
+.most_popular_part .most_populat_fashion .overlay2 .sports_content i span{
     font-family: "Rubik";
     font-weight: 100;
     padding-left: 5px;
 }
 
-.most_popular_part .fashion .overlay{
+.most_popular_part .most_populat_fashion .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -957,7 +975,11 @@ nav .menu ul li:nth-child(6) .dropdown li:nth-child(2):hover .dropdown2 {
     visibility: hidden;
 }
 
-.most_popular_part .fashion:hover .overlay{
+.most_popular_part .most_populat_fashion:hover .overlay{
     opacity: 1;
     visibility: visible;
+}
+.most_popular_part .most_popular_sidebar_content .fashion{
+    padding-top: 0;
+    border-bottom: none;
 }
